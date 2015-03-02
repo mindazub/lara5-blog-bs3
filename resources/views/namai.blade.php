@@ -37,11 +37,11 @@
 		@endif
 
 
-        <!-- <div class="text-center">
-                <ul class="pagination">
-                    {{ $posts->render() }}
+        <div class="text-center">
+                <ul class="pagination pagination-large">
+                    {!! $posts->render() !!}
                 </ul>                
-        </div>  -->   
+        </div>    
                 <!-- <div class="text-center">
                 		<ul class="pagination pagination-large">
                 			<li><a href="#">&laquo;</a></li>
@@ -56,14 +56,14 @@
                 </div> -->
 
                 <!-- Pager -->
-                <ul class="pager">
+                <!-- <ul class="pager">
                     <li class="previous">
                         <a href="#">&larr; Older</a>
                     </li>
                     <li class="next">
                         <a href="#">Newer &rarr;</a>
                     </li>
-                </ul>
+                </ul> -->
 
             </div>
 

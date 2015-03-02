@@ -15,7 +15,7 @@ class FirstController extends Controller {
 	// }
 
 	public function index(){
-		$posts = Post::simplepaginate(4);
+		$posts = Post::paginate(3);
 
 		// return view('namai')->with('posts', $posts);
 		return view('namai', compact('posts'));
