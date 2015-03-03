@@ -22,7 +22,9 @@
                 <hr>
 
                 <!-- Date/Time -->
-                <p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
+                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ date("Y m d",strtotime($post->published_at)) }}&nbsp&nbsp||&nbsp&nbspAugust 24, 2013 at 9:00 PM</p>
+                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ date("g:ha",strtotime($post->published_at)) }}&nbsp&nbsp||&nbsp&nbspAugust 24, 2013 at 9:00 PM</p>
+                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ date('d M Y a\t H:i a', strtotime($post->published_at)) }} }}&nbsp&nbsp||&nbsp&nbspAugust 24, 2013 at 9:00 PM</p>
 
                 <hr>
 

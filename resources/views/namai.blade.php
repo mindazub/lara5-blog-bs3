@@ -2,14 +2,74 @@
 
 @section('content')
  <!-- Page Content -->
+
+    <div class="row" style="top-margin: -25px;"> 
+
+                <div class="col-md-12"> 
+
+                        <!-- slider -->
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                        <img class="img-responsive" src="http://lorempixel.com/1920/400/transport/{{ rand(1, 10) }}/Dummy-Text" alt="">
+                        </div>
+
+                        <div class="item">
+                        <img class="img-responsive" src="http://lorempixel.com/1920/400/transport/{{ rand(1, 10) }}/Dummy-Text" alt="">
+                        </div>
+
+                        <div class="item">
+                        <img class="img-responsive" src="http://lorempixel.com/1920/400/transport/{{ rand(1, 10) }}/Dummy-Text" alt="">
+                        </div>
+
+                        <div class="item">
+                        <img class="img-responsive" src="http://lorempixel.com/1920/400/transport/{{ rand(1, 10) }}/Dummy-Text" alt="">
+                        </div>
+                      </div>
+
+                      <!-- Left and right controls -->
+                      <!-- <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span> -->
+                      </a>
+                    </div>
+
+                <!-- slider ends  -->
+
+                </div>  
+
+
+        </div><!--  row ends -->
+
+
+
     <div class="container">
+
+        
+
 
         <div class="row">
 
             <!-- Blog Entries Column -->
-            <div class="col-md-8">
+            <div class="col-md-8" style="font-family: 'Lato', sans-serif; font-weigth: 700;">
 
-                <h1 class="page-header">
+                
+
+
+                <h1 class="page-header" style="font-family: 'Quicksand', sans-serif;">
                     <i>"Citius, Altius, Fortius"</i>
                     <small>autorius nežinomas</small>
                 </h1>
@@ -17,13 +77,13 @@
                 <!-- First Blog Post -->
         @if($posts->count())
                 @foreach($posts as $post) 
-		                <h2>
+		                <h2 style="font-family: 'Lato', sans-serif;">
 		                    <a href="{{ route('postShow', $post ) }}">{{ $post->title }}</a>
 		                </h2>
 		                <p class="lead">
 		                    by <a href="index.php"> {{ $post->username }}</a>
 		                </p>
-		                <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:00 PM</p>
+		                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ $post->published_at }}&nbsp&nbsp||&nbsp&nbspAugust 28, 2013 at 10:00 PM</p>
 		                <hr>
 		                <img class="img-responsive" src="http://lorempixel.com/900/300/sports/{{ rand(1, 10) }}/Dummy-Text" alt="">
 		                <hr>
@@ -42,28 +102,7 @@
                     {!! $posts->render() !!}
                 </ul>                
         </div>    
-                <!-- <div class="text-center">
-                		<ul class="pagination pagination-large">
-                			<li><a href="#">&laquo;</a></li>
-                			<li><a href="#">1</a></li>
-                			<li><a href="#">2</a></li>
-                			<li><a href="#">3</a></li>
-                			<li><a href="#">4</a></li>
-                			<li><a href="#">5</a></li>
-                			<li><a href="#">&raquo;</a></li>
-                		</ul> 
-                	
-                </div> -->
-
-                <!-- Pager -->
-                <!-- <ul class="pager">
-                    <li class="previous">
-                        <a href="#">&larr; Older</a>
-                    </li>
-                    <li class="next">
-                        <a href="#">Newer &rarr;</a>
-                    </li>
-                </ul> -->
+                
 
             </div>
 

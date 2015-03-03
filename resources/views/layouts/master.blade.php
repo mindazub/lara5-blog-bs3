@@ -8,8 +8,20 @@
 
 	<link href="/css/app.css" rel="stylesheet">
 
+	<!-- Flat ui -->
+	<!-- <link href="/css/flat-ui.css" rel="stylesheet"> -->
+	<!-- end of flat ui -->
+
+		<!-- <link href="/css/mano/mano.css" rel="stylesheet"> -->
+		<!-- <link href="/css/mano/panel.css" rel="stylesheet"> -->
+
+
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
